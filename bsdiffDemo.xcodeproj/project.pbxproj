@@ -15,6 +15,13 @@
 		B9EBAE932244B5B500A01E0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EBAE922244B5B500A01E0C /* main.m */; };
 		B9EBAE9D2244B5B500A01E0C /* bsdiffDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EBAE9C2244B5B500A01E0C /* bsdiffDemoTests.m */; };
 		B9EBAEA82244B5B500A01E0C /* bsdiffDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EBAEA72244B5B500A01E0C /* bsdiffDemoUITests.m */; };
+		B9EBAEBC2244B60D00A01E0C /* bspatch.c in Sources */ = {isa = PBXBuildFile; fileRef = B9EBAEBA2244B60D00A01E0C /* bspatch.c */; settings = {COMPILER_FLAGS = " -Wno-shorten-64-to-32"; }; };
+		B9EBAEBD2244B60D00A01E0C /* bsdiff.c in Sources */ = {isa = PBXBuildFile; fileRef = B9EBAEBB2244B60D00A01E0C /* bsdiff.c */; settings = {COMPILER_FLAGS = " -Wno-shorten-64-to-32"; }; };
+		B9EBAEC12244BC8400A01E0C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EBAEC02244BC8400A01E0C /* libz.tbd */; };
+		B9EBAEC52244BC9800A01E0C /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EBAEC42244BC9800A01E0C /* libbz2.1.0.tbd */; };
+		B9EBAEC72244C52400A01E0C /* old-bundle.zip in Resources */ = {isa = PBXBuildFile; fileRef = B9EBAEC62244C52300A01E0C /* old-bundle.zip */; };
+		B9EBAEC92244C52D00A01E0C /* new.pat in Resources */ = {isa = PBXBuildFile; fileRef = B9EBAEC82244C52D00A01E0C /* new.pat */; };
+		B9EBAED22244D3A800A01E0C /* new-bundle.zip in Resources */ = {isa = PBXBuildFile; fileRef = B9EBAED12244D3A800A01E0C /* new-bundle.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,15 @@
 		B9EBAEA32244B5B500A01E0C /* bsdiffDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bsdiffDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EBAEA72244B5B500A01E0C /* bsdiffDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bsdiffDemoUITests.m; sourceTree = "<group>"; };
 		B9EBAEA92244B5B500A01E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9EBAEBA2244B60D00A01E0C /* bspatch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bspatch.c; sourceTree = "<group>"; };
+		B9EBAEBB2244B60D00A01E0C /* bsdiff.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bsdiff.c; sourceTree = "<group>"; };
+		B9EBAEBE2244B78E00A01E0C /* bsdiffHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bsdiffHeader.h; sourceTree = "<group>"; };
+		B9EBAEC02244BC8400A01E0C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B9EBAEC22244BC9000A01E0C /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		B9EBAEC42244BC9800A01E0C /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		B9EBAEC62244C52300A01E0C /* old-bundle.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "old-bundle.zip"; sourceTree = "<group>"; };
+		B9EBAEC82244C52D00A01E0C /* new.pat */ = {isa = PBXFileReference; lastKnownFileType = file; path = new.pat; sourceTree = "<group>"; };
+		B9EBAED12244D3A800A01E0C /* new-bundle.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "new-bundle.zip"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9EBAEC52244BC9800A01E0C /* libbz2.1.0.tbd in Frameworks */,
+				B9EBAEC12244BC8400A01E0C /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +103,7 @@
 				B9EBAE9B2244B5B500A01E0C /* bsdiffDemoTests */,
 				B9EBAEA62244B5B500A01E0C /* bsdiffDemoUITests */,
 				B9EBAE812244B5B300A01E0C /* Products */,
+				B9EBAEBF2244BC8400A01E0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +120,14 @@
 		B9EBAE822244B5B300A01E0C /* bsdiffDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B9EBAEB92244B60D00A01E0C /* diffpatch */,
 				B9EBAE832244B5B300A01E0C /* AppDelegate.h */,
 				B9EBAE842244B5B300A01E0C /* AppDelegate.m */,
 				B9EBAE862244B5B400A01E0C /* ViewController.h */,
 				B9EBAE872244B5B400A01E0C /* ViewController.m */,
+				B9EBAEC62244C52300A01E0C /* old-bundle.zip */,
+				B9EBAED12244D3A800A01E0C /* new-bundle.zip */,
+				B9EBAEC82244C52D00A01E0C /* new.pat */,
 				B9EBAE892244B5B400A01E0C /* Main.storyboard */,
 				B9EBAE8C2244B5B500A01E0C /* Assets.xcassets */,
 				B9EBAE8E2244B5B500A01E0C /* LaunchScreen.storyboard */,
@@ -130,6 +153,26 @@
 				B9EBAEA92244B5B500A01E0C /* Info.plist */,
 			);
 			path = bsdiffDemoUITests;
+			sourceTree = "<group>";
+		};
+		B9EBAEB92244B60D00A01E0C /* diffpatch */ = {
+			isa = PBXGroup;
+			children = (
+				B9EBAEBA2244B60D00A01E0C /* bspatch.c */,
+				B9EBAEBB2244B60D00A01E0C /* bsdiff.c */,
+				B9EBAEBE2244B78E00A01E0C /* bsdiffHeader.h */,
+			);
+			path = diffpatch;
+			sourceTree = "<group>";
+		};
+		B9EBAEBF2244BC8400A01E0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9EBAEC42244BC9800A01E0C /* libbz2.1.0.tbd */,
+				B9EBAEC22244BC9000A01E0C /* libbz2.tbd */,
+				B9EBAEC02244BC8400A01E0C /* libz.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +279,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9EBAE902244B5B500A01E0C /* LaunchScreen.storyboard in Resources */,
+				B9EBAEC72244C52400A01E0C /* old-bundle.zip in Resources */,
 				B9EBAE8D2244B5B500A01E0C /* Assets.xcassets in Resources */,
+				B9EBAEC92244C52D00A01E0C /* new.pat in Resources */,
+				B9EBAED22244D3A800A01E0C /* new-bundle.zip in Resources */,
 				B9EBAE8B2244B5B400A01E0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +311,8 @@
 				B9EBAE882244B5B400A01E0C /* ViewController.m in Sources */,
 				B9EBAE932244B5B500A01E0C /* main.m in Sources */,
 				B9EBAE852244B5B300A01E0C /* AppDelegate.m in Sources */,
+				B9EBAEBD2244B60D00A01E0C /* bsdiff.c in Sources */,
+				B9EBAEBC2244B60D00A01E0C /* bspatch.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,9 +490,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsdiffDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -459,9 +509,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsdiffDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
