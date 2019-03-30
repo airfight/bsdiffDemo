@@ -31,6 +31,8 @@ md5 newFile
 md5 serverFile
 ```
 
+[For android](https://github.com/krmao/bspatch)
+
 
 
 
