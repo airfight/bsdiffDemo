@@ -1,5 +1,5 @@
 # bsdiffDemo
-iOS 差量更新
+iOS 差量更新/增量更新
 
 # bspatch Tool For iOS
 
@@ -23,6 +23,12 @@ bsdiff oldfile newfile patchfile
 ```
 bspatch oldfile newfile patchfile
 
+```
+
+md5对比生成的最新包与服务器最新包是否一致
+```
+md5 newFile
+md5 serverFile
 ```
 
 
